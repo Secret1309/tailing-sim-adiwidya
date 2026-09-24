@@ -13,7 +13,7 @@ export function Header() {
             <div className="container relative mx-auto flex h-16 items-center justify-between px-2 lg:h-24 lg:px-4">
 
                 {/* Logos Section - Left (hidden on mobile to prevent overlap) */}
-                <div className="hidden items-center gap-2 lg:flex lg:gap-6">
+                <div className="hidden items-center gap-2 lg:flex lg:gap-4">
                     <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
                         <Image
                             src="/assets/Logo_ITB.png"
@@ -22,19 +22,33 @@ export function Header() {
                             className="object-contain p-1"
                         />
                     </div>
-                    <Image
-                        src="/LogoIMIP.png"
-                        alt="Logo IMIP"
-                        width={240}
-                        height={75}
-                        className="h-[48px] w-auto lg:h-[60px]"
-                    />
+                    <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
+                        <Image
+                            src="/assets/sainsmatcropped.png"
+                            alt="Logo FSM UKSW"
+                            fill
+                            className="object-contain p-1"
+                        />
+                    </div>
+                    <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
+                        <Image
+                            src="/assets/UKSW.png"
+                            alt="Logo UKSW"
+                            fill
+                            className="object-contain p-1"
+                        />
+                    </div>
                 </div>
 
                 {/* Center Title - Centered on all screens */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center">
                     <Link href="/">
-                        <h1 className="bg-gradient-to-r from-green-700 via-green-600 to-yellow-500 bg-clip-text text-xl font-extrabold tracking-[0.1em] text-transparent drop-shadow-sm transition-all hover:opacity-90 sm:text-2xl lg:text-5xl lg:tracking-[0.2em]">
+                        <h1
+                            className="bg-clip-text text-xl font-extrabold tracking-[0.1em] text-transparent drop-shadow-sm transition-all hover:opacity-90 sm:text-2xl lg:text-5xl lg:tracking-[0.2em]"
+                            style={{
+                                backgroundImage: 'linear-gradient(to left, #75cac3, #509304)',
+                            }}
+                        >
                             TAILINGSIM
                         </h1>
                     </Link>

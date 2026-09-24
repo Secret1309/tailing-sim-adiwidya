@@ -16,7 +16,7 @@ export default function Documentation() {
                 <div className="mb-10">
                     <h1 className="text-4xl font-bold text-gray-900">Dokumentasi & Logika Simulasi</h1>
                     <p className="mt-4 text-lg text-gray-600">
-                        Penjelasan lengkap mengenai algoritma, model neraca massa, stoikiometri netralisasi, dan analisis tekno-ekonomi yang digunakan dalam TAILINGSIM untuk tailing HPAL nikel laterit PT IMIP.
+                        Penjelasan lengkap mengenai algoritma, model neraca massa, stoikiometri netralisasi, dan analisis tekno-ekonomi yang digunakan dalam TAILINGSIM untuk tailing HPAL nikel laterit - kompetisi RANU 2.0 FSM UKSW 2026, Subtema Environmental Technology.
                     </p>
                 </div>
 
@@ -282,7 +282,7 @@ export default function Documentation() {
 
                             <div className="rounded-lg bg-gray-50 p-4 text-sm text-gray-700 border border-gray-200">
                                 <strong>Catatan:</strong> Limbah tailing HPAL diasumsikan gratis (Rp 0/ton) karena merupakan limbah industri.
-                                Bahkan, pabrik menerima <strong>Tipping Fee</strong> sebesar Rp 75.000/ton dari PT IMIP untuk menerima tailing, menjadikan bahan baku justru menghasilkan pendapatan.
+                                Bahkan, pabrik menerima <strong>Tipping Fee</strong> sebesar Rp 75.000/ton dari perusahaan tambang untuk menerima tailing, menjadikan bahan baku justru menghasilkan pendapatan.
                             </div>
                         </div>
                     </section>
@@ -470,7 +470,7 @@ export default function Documentation() {
                                                 <td className="px-4 py-3 font-medium text-gray-900">Tailing HPAL</td>
                                                 <td className="px-4 py-3 text-gray-600">Bahan Baku</td>
                                                 <td className="px-4 py-3 font-mono text-gray-900">Rp 0 (Gratis + Tipping Fee)</td>
-                                                <td className="px-4 py-3 text-gray-600">Disuplai PT IMIP</td>
+                                                <td className="px-4 py-3 text-gray-600">Disuplai dari perusahaan tambang</td>
                                             </tr>
                                             <tr>
                                                 <td className="px-4 py-3 font-medium text-gray-900">Kapur Tohor (CaO)</td>

@@ -22,11 +22,16 @@ Platform ini mengintegrasikan:
 - **Kalkulator Pemberdayaan BUMDes:** Konversi teoretis simulasi ke dalam satuan lapangan (karung, sak, kg) yang dapat dieksekusi oleh masyarakat lokal, lengkap dengan pemantauan standar keamanan uji _Toxicity Characteristic Leaching Procedure_ (TCLP) sesuai PP No. 22 Tahun 2021.
 
 ## Tim Pengembang
-Dikembangkan dalam lingkup kompetisi MAPRES ITB 2026.
+Dikembangkan untuk kompetisi **RANU 2.0 FSM UKSW 2026** (Subtema: Environmental Technology).
 
-- **Muhammad Ilham Saripul Milah**
-  Lead Researcher & Full-Stack Developer
-  Teknik Metalurgi, Fakultas Teknik Pertambangan dan Perminyakan (FTTM)
+- **Dzaky Zahy Rabbani**  
+  Numerical Modelling & Developer  
+  Oseanografi, Fakultas Ilmu dan Teknologi Kebumian (FITB)  
+  Institut Teknologi Bandung (ITB)
+
+- **Muhammad Ilham Saripul Milah**  
+  Lead Researcher & Full-Stack Developer  
+  Teknik Metalurgi, Fakultas Teknik Pertambangan dan Perminyakan (FTTM)  
   Institut Teknologi Bandung (ITB)
 
 ## Panduan Pengembang

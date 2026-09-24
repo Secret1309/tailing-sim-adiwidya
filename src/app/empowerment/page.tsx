@@ -23,11 +23,11 @@ export default function EmpowermentPage() {
             <Header />
 
             {/* Hero Section */}
-            <div className="bg-green-800 px-4 py-16 text-center text-white sm:px-6 lg:px-8">
+            <div className="px-4 py-16 text-center text-white sm:px-6 lg:px-8" style={{ backgroundColor: '#509304' }}>
                 <div className="mx-auto max-w-3xl">
                     <h1 className="text-3xl font-extrabold sm:text-4xl md:text-5xl">Kalkulator BUMDes</h1>
                     <p className="mt-4 text-lg text-green-100">
-                        Platform panduan praktis untuk mengubah limbah tailing HPAL nikel laterit menjadi produk batako & paving block bernilai ekonomi. Dirancang khusus untuk BUMDes kawasan Morowali.
+                        Platform panduan praktis untuk mengubah limbah tailing HPAL nikel laterit menjadi produk batako &amp; paving block bernilai ekonomi. Solusi Environmental Technology untuk RANU 2.0 FSM UKSW 2026.
                     </p>
                 </div>
             </div>

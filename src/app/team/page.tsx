@@ -12,21 +12,14 @@ export default function TeamPage() {
             role: "Numerical Modelling & Developer",
             uni: "Institut Teknologi Bandung (ITB)",
             major: "Oceanography - FITB",
-            img: "/assets/pp_dzaky.jpg"
+            img: "/assets/pp_dzaky.jpg",
         },
         {
             name: "Muhammad Ilham Saripul Milah",
             role: "Lead Researcher & Full-Stack Developer",
             uni: "Institut Teknologi Bandung (ITB)",
             major: "Metallurgical Engineering - FTTM",
-            img: "/assets/pp_ilham.jpg"
-        },
-        {
-            name: "Gabriela Deangela Sitanggang",
-            role: "Chemical Engineering Lead Researcher",
-            uni: "Institut Teknologi Bandung (ITB)",
-            major: "Chemical Engineering - FTI",
-            img: "/assets/pp_dean.jpg"
+            img: "/assets/pp_ilham_team.jpg",
         },
     ];
 
@@ -40,16 +33,16 @@ export default function TeamPage() {
                 </Link>
 
                 <div className="mb-12 text-center">
-                    <span className="mb-2 block text-sm font-semibold uppercase tracking-widest text-green-600">LKTI HLHS PT IMIP 2026</span>
+                    <span className="mb-2 block text-sm font-semibold uppercase tracking-widest" style={{ color: '#509304' }}>RANU 2.0 FSM UKSW 2026</span>
                     <h1 className="text-4xl font-bold text-gray-900">Tim Pengembang TAILINGSIM</h1>
-                    <p className="mt-4 text-gray-600">Riset dan pengembangan platform simulasi upcycling tailing HPAL nikel laterit untuk kompetisi LKTI HLHS PT IMIP 2026.</p>
+                    <p className="mt-4 text-gray-600">Riset dan pengembangan platform simulasi upcycling tailing HPAL nikel laterit untuk kompetisi RANU 2.0 FSM UKSW 2026 - Subtema Environmental Technology.</p>
                 </div>
 
                 <div className="flex justify-center">
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                         {researchers.map((res, i) => (
                             <div key={i} className="group w-full max-w-sm overflow-hidden rounded-2xl border bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
-                                <div className="relative h-72 w-full bg-gray-200">
+                                <div className="relative h-72 w-full bg-white overflow-hidden">
                                     <Image
                                         src={res.img}
                                         alt={res.name}
@@ -59,7 +52,7 @@ export default function TeamPage() {
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-gray-900">{res.name}</h3>
-                                    <p className="mb-4 text-sm font-medium text-green-700">{res.role}</p>
+                                    <p className="mb-4 text-sm font-medium" style={{ color: '#509304' }}>{res.role}</p>
 
                                     <div className="space-y-2 text-sm text-gray-500">
                                         <div className="flex items-start gap-2">
@@ -77,14 +70,19 @@ export default function TeamPage() {
                     </div>
                 </div>
 
-                {/* Logos - ITB & IMIP */}
+                {/* Logos - ITB, FSM UKSW & UKSW */}
                 <div className="mt-20 flex flex-col items-center justify-center space-y-4 opacity-50 grayscale transition-all hover:grayscale-0">
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400">Supported By</h3>
                     <div className="flex items-center gap-8">
                         <div className="relative h-16 w-16 lg:h-20 lg:w-20">
                             <Image src="/assets/Logo_ITB.png" alt="ITB" fill className="object-contain" />
                         </div>
-                        <Image src="/LogoIMIP.png" alt="PT IMIP" width={220} height={65} className="h-12 w-auto lg:h-14" />
+                        <div className="relative h-16 w-16 lg:h-20 lg:w-20">
+                            <Image src="/assets/sainsmatcropped.png" alt="FSM UKSW" fill className="object-contain" />
+                        </div>
+                        <div className="relative h-16 w-16 lg:h-20 lg:w-20">
+                            <Image src="/assets/UKSW.png" alt="UKSW" fill className="object-contain" />
+                        </div>
                     </div>
                 </div>
 

@@ -41,7 +41,7 @@ export default function About() {
                                 Lokasi dan Waktu Penelitian
                             </h3>
                             <div className="prose max-w-none text-gray-700 space-y-4">
-                                <p>Fase pengembangan komputasional dan rekayasa perangkat lunak TailingSIM dilakukan secara digital di lingkungan Institut Teknologi Bandung pada semester genap awal tahun 2026. Fokus lokasi penerapan simulasi studi kasus secara penuh diarahkan pada kawasan PT Indonesia Morowali Industrial Park guna menjamin tingkat relevansi operasional hilirisasi nikel laterit secara riil.</p>
+                                <p>Fase pengembangan komputasional dan rekayasa perangkat lunak TailingSIM dilakukan secara digital di lingkungan Institut Teknologi Bandung pada semester genap awal tahun 2026. Fokus lokasi penerapan simulasi studi kasus secara penuh diarahkan pada kawasan industri pengolahan nikel guna menjamin tingkat relevansi operasional hilirisasi nikel laterit secara riil.</p>
                                 <p>Proyeksi kapasitas pengolahan tailing secara spasio temporal disimulasikan menggunakan parameter waktu operasional pabrik yang dirumuskan sebagai:</p>
                                 <div className="bg-gray-100 p-4 rounded-lg font-mono text-center text-lg overflow-x-auto">
                                     T<sub>p</sub> = V<sub>tailing</sub> / (Q<sub>proses</sub> &times; E<sub>f</sub>)
@@ -221,7 +221,7 @@ export default function About() {
                                 <div className="rounded-xl bg-gray-50 p-6 border border-gray-200 text-center">
                                     <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-gray-300 text-gray-700 font-bold text-xl">1</div>
                                     <h4 className="font-semibold text-gray-800 mb-2">Penerimaan Tailing HPAL</h4>
-                                    <p className="text-sm text-gray-600">Tailing dari proses HPAL (240-260°C, 40 atm) ditampung di Tailing Storage Pond kawasan PT IMIP.</p>
+                                    <p className="text-sm text-gray-600">Tailing dari proses HPAL (240-260°C, 40 atm) ditampung di Tailing Storage Pond kawasan industri nikel Morowali.</p>
                                 </div>
                                 <div className="rounded-xl bg-amber-50 p-6 border border-amber-200 text-center">
                                     <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-amber-300 text-amber-800 font-bold text-xl">2</div>
@@ -301,7 +301,7 @@ export default function About() {
                                 <ul className="ml-5 list-disc space-y-2 text-gray-600">
                                     <li><strong>CAPEX:</strong> Investasi mixer, press, steam curing, silo, dan unit netralisasi asam</li>
                                     <li><strong>OPEX:</strong> Biaya semen, kapur netralisasi, energi, tenaga kerja</li>
-                                    <li><strong>Revenue:</strong> Penjualan produk SNI (Rp/ton) + Tipping Fee PT IMIP</li>
+                                    <li><strong>Revenue:</strong> Penjualan produk SNI (Rp/ton) + Tipping Fee kawasan industri</li>
                                     <li><strong>NPV:</strong> Net Present Value (10 tahun, WACC 12%)</li>
                                     <li><strong>IRR:</strong> Internal Rate of Return (Newton-Raphson)</li>
                                     <li><strong>PBP:</strong> Payback Period</li>

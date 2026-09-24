@@ -68,7 +68,7 @@ export function Dashboard() {
                     onClick={() => setActiveTab('brick')}
                     className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-medium transition-colors lg:px-6 lg:py-4 ${activeTab === 'brick' ? 'border-amber-700 text-amber-700' : 'border-transparent text-gray-500 hover:text-amber-600'}`}
                 >
-                    🧱 Visualisasi Batako
+                    Visualisasi Batako
                 </button>
                 <button
                     onClick={() => setActiveTab('results')}

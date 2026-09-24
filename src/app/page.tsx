@@ -14,20 +14,19 @@ export default function Home() {
 
         <div className="container relative mx-auto px-4 text-center">
           <div className="mx-auto max-w-4xl space-y-6">
-            <span className="inline-block rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-800">
-              LKTI HLHS PT IMIP 2026 - Subtema Tailing
+            <span className="inline-block rounded-full px-4 py-2 text-sm font-semibold" style={{ backgroundColor: '#75cac320', color: '#509304' }}>
+              RANU 2.0 FSM UKSW 2026 - Subtema Environmental Technology
             </span>
 
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl lg:text-5xl leading-tight">
-              TailingSIM: Decision Support System untuk Upcycling Tailing HPAL Nikel Laterit PT IMIP
+              TailingSIM: Decision Support System untuk Upcycling Tailing HPAL Nikel Laterit
             </h2>
 
             <p className="mx-auto max-w-3xl text-lg text-gray-600 leading-relaxed">
               Platform simulasi web real-time untuk menghitung stoikiometri netralisasi asam
               bebas (H₂SO₄ ±30 gpl), neraca massa hematit, kelayakan finansial (NPV/IRR),
               dan rekomendasi resep batako/paving block SNI dari limbah <strong>tailing HPAL nikel
-              laterit</strong> - mendukung sirkular ekonomi terintegrasi kawasan PT IMIP dan
-              pemberdayaan <strong>BUMDes Morowali</strong>.
+              laterit</strong> - mendukung sirkular ekonomi dan pengelolaan <strong>limbah tambang berkelanjutan</strong>.
             </p>
 
             <div className="mx-auto flex w-full max-w-[600px] flex-col items-center justify-center gap-4 pt-6">
@@ -35,13 +34,15 @@ export default function Home() {
               <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                 <Link
                   href="/simulation"
-                  className="group flex w-full items-center justify-center gap-2 rounded-full bg-green-700 py-4 px-2 text-center text-[15px] sm:text-lg font-semibold text-white shadow-lg transition-all hover:bg-green-800 hover:shadow-green-100"
+                  className="group flex w-full items-center justify-center gap-2 rounded-full py-4 px-2 text-center text-[15px] sm:text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl"
+                  style={{ backgroundColor: '#509304' }}
                 >
                   Mulai Simulasi <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   href="/empowerment"
-                  className="flex w-full items-center justify-center gap-2 rounded-full border border-yellow-400 bg-yellow-500 py-4 px-2 text-center text-[15px] sm:text-lg font-semibold text-gray-900 shadow-lg transition-all hover:bg-yellow-400 hover:shadow-yellow-100"
+                  className="flex w-full items-center justify-center gap-2 rounded-full border py-4 px-2 text-center text-[15px] sm:text-lg font-semibold shadow-lg transition-all"
+                  style={{ borderColor: '#75cac3', backgroundColor: '#75cac315', color: '#509304' }}
                 >
                   Kalkulator BUMDes
                 </Link>
@@ -78,7 +79,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gray-200 text-gray-700">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg text-white" style={{ backgroundColor: '#509304' }}>
                 <Layers className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-bold">Neraca Massa HPAL</h3>
@@ -86,7 +87,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl border bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-100 text-yellow-800">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg text-white" style={{ backgroundColor: '#75cac3' }}>
                 <Users className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-bold">Kalkulator BUMDes</h3>
@@ -106,7 +107,7 @@ export default function Home() {
                 <LineChart className="h-6 w-6" />
               </div>
               <h3 className="mb-2 text-xl font-bold">Analisis Tekno-Ekonomi</h3>
-              <p className="text-gray-600">Analisis kelayakan ekonomi lengkap: NPV, IRR, Payback Period, CAPEX/OPEX skala industri kawasan PT IMIP Morowali.</p>
+              <p className="text-gray-600">Analisis kelayakan ekonomi lengkap: NPV, IRR, Payback Period, CAPEX/OPEX skala industri untuk pengolahan tailing berkelanjutan.</p>
             </div>
           </div>
         </div>
