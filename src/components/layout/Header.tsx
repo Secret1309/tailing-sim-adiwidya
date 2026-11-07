@@ -1,15 +1,17 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { assetPath } from '@/lib/utils';
 
-const HEADER_LOGOS = [
+const LEFT_LOGOS = [
     { src: "/assets/Logo_ITB.png", alt: "Logo ITB" },
     { src: "/assets/Logo_UPI.png", alt: "Logo UPI" },
     { src: "/assets/Logo_Salman_ITB.png", alt: "Logo Salman ITB" },
+];
+
+const RIGHT_LOGOS = [
     { src: "/assets/Logo_KAMIL_ITB.png", alt: "Logo KAMIL Pascasarjana ITB" },
     { src: "/assets/Logo_GAMAIS_ITB.png", alt: "Logo GAMAIS ITB" },
     { src: "/assets/Logo_AMKI.png", alt: "Logo AMKI" },
@@ -19,23 +21,18 @@ export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-gray-300 bg-white/80 backdrop-blur-md">
-            <div className="container relative mx-auto flex h-16 items-center justify-between px-2 lg:h-24 lg:px-4">
+        <header className="sticky top-0 z-50 w-full border-b border-gray-300 bg-white/95 backdrop-blur-md">
+            <div className="container relative mx-auto flex h-16 items-center justify-between px-3 lg:h-24 lg:px-6">
 
-                {/* Logos Section - Left (hidden on mobile to prevent overlap) */}
-                <div className="hidden items-center gap-1.5 lg:flex xl:gap-2.5">
-                    {HEADER_LOGOS.map((logo) => (
-                        <div
+                {/* Left Logos: ITB, UPI, Salman ITB */}
+                <div className="hidden items-center gap-3 lg:flex xl:gap-5">
+                    {LEFT_LOGOS.map((logo) => (
+                        <img
                             key={logo.alt}
-                            className="relative h-[42px] w-[42px] xl:h-[48px] xl:w-[48px] overflow-hidden rounded-full border-2 border-slate-200 bg-white shadow-sm"
-                        >
-                            <Image
-                                src={assetPath(logo.src)}
-                                alt={logo.alt}
-                                fill
-                                className="object-contain p-1"
-                            />
-                        </div>
+                            src={assetPath(logo.src)}
+                            alt={logo.alt}
+                            className="h-12 w-auto object-contain mix-blend-multiply lg:h-14 xl:h-16"
+                        />
                     ))}
                 </div>
 
@@ -53,8 +50,18 @@ export function Header() {
                     </Link>
                 </div>
 
-                {/* Right Section - Hamburger Menu */}
-                <div className="relative ml-auto flex items-center lg:ml-0">
+                {/* Right Section - Right Logos (KAMIL, GAMAIS, AMKI) + Hamburger Menu */}
+                <div className="relative ml-auto flex items-center gap-3 lg:ml-0 xl:gap-5">
+                    <div className="hidden items-center gap-3 lg:flex xl:gap-5">
+                        {RIGHT_LOGOS.map((logo) => (
+                            <img
+                                key={logo.alt}
+                                src={assetPath(logo.src)}
+                                alt={logo.alt}
+                                className="h-12 w-auto object-contain mix-blend-multiply lg:h-14 xl:h-16"
+                            />
+                        ))}
+                    </div>
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-800 focus:outline-none"

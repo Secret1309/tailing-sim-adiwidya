@@ -85,9 +85,12 @@ export default function TeamPage() {
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400">Supported By</h3>
                     <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
                         {SUPPORTED_LOGOS.map((logo) => (
-                            <div key={logo.alt} className="relative h-16 w-16 lg:h-20 lg:w-20">
-                                <Image src={assetPath(logo.src)} alt={logo.alt} fill className="object-contain" />
-                            </div>
+                            <img
+                                key={logo.alt}
+                                src={assetPath(logo.src)}
+                                alt={logo.alt}
+                                className="h-14 w-auto object-contain mix-blend-multiply lg:h-16"
+                            />
                         ))}
                     </div>
                 </div>
