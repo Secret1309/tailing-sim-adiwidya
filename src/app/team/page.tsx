@@ -21,7 +21,7 @@ export default function TeamPage() {
             name: "Muhammad Ilham Saripul Milah",
             role: "Lead Researcher & Full-Stack Developer",
             uni: "Institut Teknologi Bandung (ITB)",
-            major: "Metallurgical Engineering - FTTM",
+            major: "Teknik Metalurgi",
             img: assetPath("/assets/pp_ilham_team.jpg"),
         },
         {
