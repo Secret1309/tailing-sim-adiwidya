@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TAILINGSIM - Platform Simulasi Pengolahan Tailing | RANU 2.0 FSM UKSW",
-  description: "Platform simulasi web untuk optimalisasi tekno-ekonomi pengolahan tailing menjadi produk konstruksi berbasis ekonomi sirkular - Kompetisi RANU 2.0 FSM UKSW, Subtema Environmental Technology",
+  title: "TAILINGSIM - Platform Simulasi Pengolahan Tailing | SIM X Adiwidya",
+  description: "Platform simulasi web untuk optimalisasi tekno-ekonomi pengolahan tailing menjadi produk konstruksi berbasis ekonomi sirkular - Kompetisi SIM X Adiwidya, Subtema Environmental Technology",
 };
 
 export default function RootLayout({

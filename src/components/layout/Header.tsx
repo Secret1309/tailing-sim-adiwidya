@@ -4,6 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { assetPath } from '@/lib/utils';
+
+const HEADER_LOGOS = [
+    { src: "/assets/Logo_ITB.png", alt: "Logo ITB" },
+    { src: "/assets/Logo_UPI.png", alt: "Logo UPI" },
+    { src: "/assets/Logo_Salman_ITB.png", alt: "Logo Salman ITB" },
+    { src: "/assets/Logo_KAMIL_ITB.png", alt: "Logo KAMIL Pascasarjana ITB" },
+    { src: "/assets/Logo_GAMAIS_ITB.png", alt: "Logo GAMAIS ITB" },
+    { src: "/assets/Logo_AMKI.png", alt: "Logo AMKI" },
+];
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,31 +23,20 @@ export function Header() {
             <div className="container relative mx-auto flex h-16 items-center justify-between px-2 lg:h-24 lg:px-4">
 
                 {/* Logos Section - Left (hidden on mobile to prevent overlap) */}
-                <div className="hidden items-center gap-2 lg:flex lg:gap-4">
-                    <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
-                        <Image
-                            src="/assets/Logo_ITB.png"
-                            alt="Logo ITB"
-                            fill
-                            className="object-contain p-1"
-                        />
-                    </div>
-                    <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
-                        <Image
-                            src="/assets/sainsmatcropped.png"
-                            alt="Logo FSM UKSW"
-                            fill
-                            className="object-contain p-1"
-                        />
-                    </div>
-                    <div className="relative h-[55px] w-[55px] overflow-hidden rounded-full border-2 border-slate-200 shadow-sm">
-                        <Image
-                            src="/assets/UKSW.png"
-                            alt="Logo UKSW"
-                            fill
-                            className="object-contain p-1"
-                        />
-                    </div>
+                <div className="hidden items-center gap-1.5 lg:flex xl:gap-2.5">
+                    {HEADER_LOGOS.map((logo) => (
+                        <div
+                            key={logo.alt}
+                            className="relative h-[42px] w-[42px] xl:h-[48px] xl:w-[48px] overflow-hidden rounded-full border-2 border-slate-200 bg-white shadow-sm"
+                        >
+                            <Image
+                                src={assetPath(logo.src)}
+                                alt={logo.alt}
+                                fill
+                                className="object-contain p-1"
+                            />
+                        </div>
+                    ))}
                 </div>
 
                 {/* Center Title - Centered on all screens */}

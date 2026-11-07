@@ -4,22 +4,32 @@ import { Header } from "@/components/layout/Header";
 import { ArrowLeft, GraduationCap, MapPin } from "lucide-react";
 import Link from 'next/link';
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
+
+const SUPPORTED_LOGOS = [
+    { src: "/assets/Logo_ITB.png", alt: "ITB" },
+    { src: "/assets/Logo_UPI.png", alt: "UPI" },
+    { src: "/assets/Logo_Salman_ITB.png", alt: "Salman ITB" },
+    { src: "/assets/Logo_KAMIL_ITB.png", alt: "KAMIL Pascasarjana ITB" },
+    { src: "/assets/Logo_GAMAIS_ITB.png", alt: "GAMAIS ITB" },
+    { src: "/assets/Logo_AMKI.png", alt: "AMKI" },
+];
 
 export default function TeamPage() {
     const researchers = [
-        {
-            name: "Dzaky Zahy Rabbani",
-            role: "Numerical Modelling & Developer",
-            uni: "Institut Teknologi Bandung (ITB)",
-            major: "Oceanography - FITB",
-            img: "/assets/pp_dzaky.jpg",
-        },
         {
             name: "Muhammad Ilham Saripul Milah",
             role: "Lead Researcher & Full-Stack Developer",
             uni: "Institut Teknologi Bandung (ITB)",
             major: "Metallurgical Engineering - FTTM",
-            img: "/assets/pp_ilham_team.jpg",
+            img: assetPath("/assets/pp_ilham_team.jpg"),
+        },
+        {
+            name: "Shizuka Maula Everlin",
+            role: "Numerical Modelling & Developer",
+            uni: "Universitas Pendidikan Indonesia",
+            major: "Jurusan Fisika",
+            img: assetPath("/assets/pp_shizuka.png"),
         },
     ];
 
@@ -33,9 +43,9 @@ export default function TeamPage() {
                 </Link>
 
                 <div className="mb-12 text-center">
-                    <span className="mb-2 block text-sm font-semibold uppercase tracking-widest" style={{ color: '#509304' }}>RANU 2.0 FSM UKSW 2026</span>
+                    <span className="mb-2 block text-sm font-semibold uppercase tracking-widest" style={{ color: '#509304' }}>SIM X Adiwidya</span>
                     <h1 className="text-4xl font-bold text-gray-900">Tim Pengembang TAILINGSIM</h1>
-                    <p className="mt-4 text-gray-600">Riset dan pengembangan platform simulasi upcycling tailing HPAL nikel laterit untuk kompetisi RANU 2.0 FSM UKSW 2026 - Subtema Environmental Technology.</p>
+                    <p className="mt-4 text-gray-600">Riset dan pengembangan platform simulasi upcycling tailing HPAL nikel laterit untuk kompetisi SIM X Adiwidya - Subtema Environmental Technology.</p>
                 </div>
 
                 <div className="flex justify-center">
@@ -70,19 +80,15 @@ export default function TeamPage() {
                     </div>
                 </div>
 
-                {/* Logos - ITB, FSM UKSW & UKSW */}
+                {/* Logos */}
                 <div className="mt-20 flex flex-col items-center justify-center space-y-4 opacity-50 grayscale transition-all hover:grayscale-0">
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400">Supported By</h3>
-                    <div className="flex items-center gap-8">
-                        <div className="relative h-16 w-16 lg:h-20 lg:w-20">
-                            <Image src="/assets/Logo_ITB.png" alt="ITB" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-16 w-16 lg:h-20 lg:w-20">
-                            <Image src="/assets/sainsmatcropped.png" alt="FSM UKSW" fill className="object-contain" />
-                        </div>
-                        <div className="relative h-16 w-16 lg:h-20 lg:w-20">
-                            <Image src="/assets/UKSW.png" alt="UKSW" fill className="object-contain" />
-                        </div>
+                    <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+                        {SUPPORTED_LOGOS.map((logo) => (
+                            <div key={logo.alt} className="relative h-16 w-16 lg:h-20 lg:w-20">
+                                <Image src={assetPath(logo.src)} alt={logo.alt} fill className="object-contain" />
+                            </div>
+                        ))}
                     </div>
                 </div>
 

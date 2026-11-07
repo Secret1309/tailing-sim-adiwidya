@@ -2,6 +2,7 @@
 import { Header } from "@/components/layout/Header";
 import { ArrowLeft } from "lucide-react";
 import Link from 'next/link';
+import { assetPath } from "@/lib/utils";
 
 export default function About() {
     return (
@@ -60,7 +61,7 @@ export default function About() {
                                 <p>Populasi utama dalam simulasi ini adalah aliran limbah atau slurry yang dihasilkan dari proses High Pressure Acid Leaching bijih nikel laterit zona limonit. Sampel fisik yang dijadikan basis parameter input didasarkan pada data sekunder tailing dengan dominasi mineral hematit hasil operasi autoklaf pada rentang suhu 220 hingga 250 derajat Celcius. Subjek implementasi inovasi secara sosial adalah kelompok Badan Usaha Milik Desa yang diberdayakan sebagai agen pengolah residu menjadi batako konstruksi.</p>
                                 
                                 <div className="mt-8 flex flex-col items-center">
-                                    <img src="/assets/gambar3-1.png" alt="Gambar 3.1" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-2" />
+                                    <img src={assetPath("/assets/gambar3-1.png")} alt="Gambar 3.1" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-2" />
                                     <p className="mt-3 text-sm text-center text-gray-500 italic max-w-3xl">
                                         Gambar 3.1 Kinetika pelarutan nikel dan profil mineralogi presipitasi besi pada residu proses HPAL nikel laterit limonit. (Abbasi Gharaei dkk., 2024).
                                     </p>
@@ -97,13 +98,6 @@ export default function About() {
                             </h3>
                             <div className="prose max-w-none text-gray-700 space-y-4">
                                 <p>Instrumen pengukuran primer yang digunakan adalah purwarupa perangkat lunak Decision Support System TailingSIM. Instrumen sekunder yang dijadikan pedoman kalibrasi mutu meliputi Standar Nasional Indonesia SNI 03-0349-1989 untuk standarisasi kuat tekan bata beton serta Lampiran XI Peraturan Pemerintah No. 22 Tahun 2021 sebagai instrumen batas kelulusan uji toksisitas pelindihan lingkungan.</p>
-                                
-                                <div className="mt-8 flex flex-col items-center">
-                                    <img src="/assets/gambar3-2.png" alt="Gambar 3.2" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-2" />
-                                    <p className="mt-3 text-sm text-center text-gray-500 italic max-w-3xl">
-                                        Gambar 3.2 Antarmuka purwarupa instrumen perangkat lunak Decision Support System TailingSIM (Dokumentasi Pribadi, 2026).
-                                    </p>
-                                </div>
                             </div>
                         </div>
 
@@ -117,7 +111,7 @@ export default function About() {
                                 <p>Pengumpulan data dilaksanakan melalui teknik penelusuran literatur sekunder dari publikasi jurnal kuartil atas yang memuat data eksperimental ekstraksi nikel limonit. Data kalibrasi penetralan keasaman divalidasi menggunakan metode kurva penyangga atau buffer curve method yang terbukti paling presisi dalam memprediksi kebutuhan reagen kimia secara linier pada sistem limbah asam.</p>
                                 
                                 <div className="mt-8 flex flex-col items-center">
-                                    <img src="/assets/gambar3-3.png" alt="Gambar 3.3" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
+                                    <img src={assetPath("/assets/gambar3-3.png")} alt="Gambar 3.3" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
                                     <p className="mt-3 text-sm text-center text-gray-500 italic max-w-3xl">
                                         Gambar 3.3 Kurva hubungan empiris prediksi pH terhadap fluktuasi dosis penambahan kapur penetral (Dimodifikasi dari Yin dkk., 2021).
                                     </p>
@@ -152,7 +146,7 @@ export default function About() {
                                     <p>di mana f<sub>c</sub> adalah kuat tekan akhir material, f<sub>base</sub> merupakan kuat tekan dasar pengikat, R<sub>binder</sub> adalah rasio massa aktivator alkali atau semen, dan k merupakan konstanta aktivitas kimia micro filler pengisi rongga.</p>
                                     
                                     <div className="mt-8 flex flex-col items-center">
-                                        <img src="/assets/gambar3-4.png" alt="Gambar 3.4" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
+                                        <img src={assetPath("/assets/gambar3-4.png")} alt="Gambar 3.4" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
                                         <p className="mt-3 text-sm text-center text-gray-500 italic max-w-3xl">
                                             Gambar 3.4 Peningkatan kuat tekan material seiring aktivasi kimia tailing kaya besi (Hu dkk., 2024).
                                         </p>
@@ -182,7 +176,7 @@ export default function About() {
                                     <p>Modifikasi pengujian ini secara literatur terbukti akurat mengonfirmasi mekanisme enkapsulasi pada limbah padat berbasis semen.</p>
                                     
                                     <div className="mt-8 flex flex-col items-center">
-                                        <img src="/assets/gambar3-5.png" alt="Gambar 3.5" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
+                                        <img src={assetPath("/assets/gambar3-5.png")} alt="Gambar 3.5" className="max-w-full h-auto rounded-lg shadow-md border bg-white p-4" />
                                         <p className="mt-3 text-sm text-center text-gray-500 italic max-w-3xl">
                                             Gambar 3.5 Profil pelindihan unsur logam berat dari matriks padatan semen melalui uji TCLP yang dimodifikasi dengan (a) Zn umur 3 hari, (b) Zn 28 hari, (c) Pb 3 hari, (d) Pb 28 hari (Dimodifikasi dari Huang dkk., 2016).
                                         </p>

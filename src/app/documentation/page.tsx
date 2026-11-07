@@ -16,7 +16,7 @@ export default function Documentation() {
                 <div className="mb-10">
                     <h1 className="text-4xl font-bold text-gray-900">Dokumentasi & Logika Simulasi</h1>
                     <p className="mt-4 text-lg text-gray-600">
-                        Penjelasan lengkap mengenai algoritma, model neraca massa, stoikiometri netralisasi, dan analisis tekno-ekonomi yang digunakan dalam TAILINGSIM untuk tailing HPAL nikel laterit - kompetisi RANU 2.0 FSM UKSW 2026, Subtema Environmental Technology.
+                        Penjelasan lengkap mengenai algoritma, model neraca massa, stoikiometri netralisasi, dan analisis tekno-ekonomi yang digunakan dalam TAILINGSIM untuk tailing HPAL nikel laterit - kompetisi SIM X Adiwidya, Subtema Environmental Technology.
                     </p>
                 </div>
 

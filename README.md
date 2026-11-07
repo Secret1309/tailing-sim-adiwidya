@@ -1,7 +1,15 @@
 <div align="center">
   <img src="public/assets/Logo_ITB.png" alt="Logo ITB" height="60" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="public/assets/Logo_FTTM_Baru.png" alt="Logo FTTM" height="60" />
+  <img src="public/assets/Logo_UPI.png" alt="Logo UPI" height="60" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/assets/Logo_Salman_ITB.png" alt="Logo Salman ITB" height="60" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/assets/Logo_KAMIL_ITB.png" alt="Logo KAMIL ITB" height="60" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/assets/Logo_GAMAIS_ITB.png" alt="Logo GAMAIS ITB" height="60" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/assets/Logo_AMKI.png" alt="Logo AMKI" height="60" />
 </div>
 
 <h1 align="center">TAILINGSIM</h1>
@@ -22,17 +30,17 @@ Platform ini mengintegrasikan:
 - **Kalkulator Pemberdayaan BUMDes:** Konversi teoretis simulasi ke dalam satuan lapangan (karung, sak, kg) yang dapat dieksekusi oleh masyarakat lokal, lengkap dengan pemantauan standar keamanan uji _Toxicity Characteristic Leaching Procedure_ (TCLP) sesuai PP No. 22 Tahun 2021.
 
 ## Tim Pengembang
-Dikembangkan untuk kompetisi **RANU 2.0 FSM UKSW 2026** (Subtema: Environmental Technology).
-
-- **Dzaky Zahy Rabbani**  
-  Numerical Modelling & Developer  
-  Oseanografi, Fakultas Ilmu dan Teknologi Kebumian (FITB)  
-  Institut Teknologi Bandung (ITB)
+Dikembangkan untuk kompetisi **SIM X Adiwidya** (Subtema: Environmental Technology).
 
 - **Muhammad Ilham Saripul Milah**  
   Lead Researcher & Full-Stack Developer  
   Teknik Metalurgi, Fakultas Teknik Pertambangan dan Perminyakan (FTTM)  
   Institut Teknologi Bandung (ITB)
+
+- **Shizuka Maula Everlin**  
+  Numerical Modelling & Developer  
+  Jurusan Fisika  
+  Universitas Pendidikan Indonesia (UPI)
 
 ## Panduan Pengembang
 

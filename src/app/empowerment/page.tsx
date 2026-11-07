@@ -27,7 +27,7 @@ export default function EmpowermentPage() {
                 <div className="mx-auto max-w-3xl">
                     <h1 className="text-3xl font-extrabold sm:text-4xl md:text-5xl">Kalkulator BUMDes</h1>
                     <p className="mt-4 text-lg text-green-100">
-                        Platform panduan praktis untuk mengubah limbah tailing HPAL nikel laterit menjadi produk batako &amp; paving block bernilai ekonomi. Solusi Environmental Technology untuk RANU 2.0 FSM UKSW 2026.
+                        Platform panduan praktis untuk mengubah limbah tailing HPAL nikel laterit menjadi produk batako &amp; paving block bernilai ekonomi. Solusi Environmental Technology untuk SIM X Adiwidya.
                     </p>
                 </div>
             </div>

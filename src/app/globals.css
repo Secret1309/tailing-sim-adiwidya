@@ -4,13 +4,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-primary: #509304;          /* RANU Deep Green */
+  --color-primary: #509304;          /* Deep Green */
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #75cac3;        /* RANU Tosca */
+  --color-secondary: #75cac3;        /* Tosca */
   --color-secondary-foreground: #111827;
 
-  --color-accent: #75cac3;           /* RANU Tosca Accent */
+  --color-accent: #75cac3;           /* Tosca Accent */
   --color-accent-foreground: #ffffff;
 
   --color-warning: #d97706;

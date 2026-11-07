@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container relative mx-auto px-4 text-center">
           <div className="mx-auto max-w-4xl space-y-6">
             <span className="inline-block rounded-full px-4 py-2 text-sm font-semibold" style={{ backgroundColor: '#75cac320', color: '#509304' }}>
-              RANU 2.0 FSM UKSW 2026 - Subtema Environmental Technology
+              SIM X Adiwidya - Subtema Environmental Technology
             </span>
 
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl lg:text-5xl leading-tight">

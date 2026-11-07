@@ -1,9 +1,8 @@
 // ============================================================
 // TAILINGSIM - Simulation Constants for HPAL Nickel Laterite Tailing
-// LKTI HLHS PT IMIP 2026 Competition
+// SIM X Adiwidya Competition
 // 1. Muhammad Ilham Saripul Milah (Lead Researcher & Full-Stack Developer | Metallurgical Engineering ITB, FTTM)
-// 2. Dzaky Zahy Rabbani (Numerical Modelling & Developer | Oceanography ITB, FITB)
-// 3. Dean (Chemical Engineering Lead Researcher | Chemical Engineering ITB, FTI)
+// 2. Shizuka Maula Everlin (Numerical Modelling & Developer | Jurusan Fisika, Universitas Pendidikan Indonesia)
 // ============================================================
 
 // --- TAILING TYPES ---
